@@ -20,7 +20,7 @@ class CalculaFreteGrpcServer: FretesServiceGrpc.FretesServiceImplBase(){
 
         val response = CalculaFreteResponse.newBuilder()
             .setCep(request?.cep)
-            .setValor(130.00)
+            .setValor(140.00)
             .build()
 
         responseObserver?.onNext(response)
