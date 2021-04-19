@@ -47,8 +47,8 @@ class FretesGrpcServer : FretesServiceGrpc.FretesServiceImplBase() {
                 .setMessage("usuario não pode acessar esse recurso")
               .addDetails(Any.pack(ErroDetails.newBuilder()
                             .setCode(401)
-                              .setMessage("token expirado")
-                              .build()))
+                            .setMessage("token expirado")
+                            .build()))
 
                 .build()
             val e = StatusProto.toStatusRuntimeException(statusProto)
